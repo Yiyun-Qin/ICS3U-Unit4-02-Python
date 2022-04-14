@@ -4,9 +4,16 @@ GET product = 1
 TRY
     multiply_integer = int(multiply_string)
     IF multiply_integer > 0 THEN
-        
-    ENDWHILE
-    SHOW "TThe sum of all positive integers from 1 to add_string is answer."
+        DO
+            loop_counter = loop_counter + 1
+            product = product * loop_counter
+        WHILE loop_counter < multiply_integer
+        ENDWHILE
+    ELSEIF multiply_integer = 0 THEN
+        SHOW "0! = 1"
+    ELSE
+        SHOW "You did not enter a positive number."
+    ENDIF
 EXCEPT Exception
     SHOW "Invalid number!"
 FINALLY
