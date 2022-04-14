@@ -6,7 +6,7 @@
 
 
 def main():
-    # This function multiplys number from 1 to number the user enters
+    # This function multiplies number from 1 to number the user enters
 
     # input
     multiply_string = input("Enter a positive integer: ")
